@@ -6,12 +6,9 @@ class Anagram
     @word = word 
   end 
   
-  def match(word) 
-    if word.sort != @word
-      [] 
-    else 
-      @word 
-    end
+  def match(words) 
+    %w(words).select {|word|
+      word.sort == @word.sort
   end
   
 end 
