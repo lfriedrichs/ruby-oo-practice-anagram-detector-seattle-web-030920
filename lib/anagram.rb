@@ -7,7 +7,7 @@ class Anagram
   end 
   
   def match(word) 
-    
+    word.sort == @word
   end
   
 end 
